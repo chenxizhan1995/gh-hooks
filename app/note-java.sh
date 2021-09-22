@@ -1,7 +1,11 @@
 #!/bin/bash
 
+PATH=$PATH:/root/.cargo/bin
+
 old_dir=$PWD
+
 REPO_URL=https://github.com/chenxizhan1995/java-note.git
+
 main(){
 	trap _clean EXIT
 
