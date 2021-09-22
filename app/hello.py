@@ -4,7 +4,7 @@ from flask import request
 
 app = Flask(__name__)
 
-@app.route('/note-java/')
+@app.route('/note-java/', methods=['POST', 'GET'])
 def publish_note_java():
     os.system("sh note-java.sh")
     return "success"
