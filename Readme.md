@@ -7,3 +7,11 @@
 
 发布目标路径：https://chenxizhan.top/note/note-java     -> /usr/share/nginx/note/html/note-java
 
+## 启动
+```bash
+cd app
+sh run.sh
+
+# 测试
+curl localhost:8083/hello
+```

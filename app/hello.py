@@ -8,3 +8,7 @@ app = Flask(__name__)
 def publish_note_java():
     os.system("note-java.sh")
     return "success"
+
+@app.route('/test')
+def test():
+    return "服务正在运行"

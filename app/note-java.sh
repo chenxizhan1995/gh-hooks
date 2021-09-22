@@ -15,8 +15,9 @@ main(){
 	fi
 	cd java-note
 	git pull
+	cd -
 
-	mdbook build -d html/note-java
+	mdbook build -d /usr/share/nginx/note/html/note-java
 }
 
 _clean(){
