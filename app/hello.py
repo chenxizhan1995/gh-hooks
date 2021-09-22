@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/note-java/')
 def publish_note_java():
-    os.system("note-java.sh")
+    os.system("sh note-java.sh")
     return "success"
 
 @app.route('/test')
