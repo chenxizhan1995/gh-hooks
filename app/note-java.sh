@@ -13,8 +13,9 @@ main(){
 	if ! [ -e java-note ]; then
 		git clone "$REPO_URL"
 	fi
+	rm -rf java-note
+	git clone "$REPO_URL"
 	cd java-note
-	git pull
 	mdbook build -d /usr/share/nginx/note/html/note-java
 }
 
